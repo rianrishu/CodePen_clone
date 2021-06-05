@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
+// import reducer,{initialState} from './components/reducer.js'
+// import StateProvider from './components/ServiceProvider.js'
 
 ReactDOM.render(
+  // <ServiceProvider initialState={initialState} reducer={reducer}>
     <App />,
+  // </ServiceProvider>,  
   document.getElementById('root')
 );
 
