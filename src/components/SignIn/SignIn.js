@@ -1,5 +1,6 @@
 import React from "react";
 import {auth,provider} from '../firebase'
+import './signIn.css'
 
 function SignIn({OnRouteChange}){
     const signIn = () => {
@@ -14,9 +15,9 @@ function SignIn({OnRouteChange}){
         .catch((e)=> console.log(e));
     }
         return (
-            <div>
+            <div className="container4">
                 <button 
-                style={{ "margin": "40vh 95vh" }}
+                
                 type="button" 
                 className="btn btn-primary"
                 onClick={signIn}
